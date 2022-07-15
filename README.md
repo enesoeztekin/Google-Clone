@@ -1,6 +1,6 @@
 # Google Homepage Clone Design
 
-I've cloned Google's homepage design for the assignment that has been given in the Frontend Course of Patika.dev platform. 
+I've cloned Google's homepage design for the assignment that has been given in the Frontend Course of Patika.dev platform.
 
 [DEMO](https://enesoeztekin.github.io/Google-Clone/)
 
