@@ -8,7 +8,7 @@ I've cloned Google's homepage design for the assignment that has been given in t
 
 I wanted to add dark mode feature as an extra. So if you want to switch to dark mode, you could use the following dropdown menu below.
 
-![Dark Mode Toggler](https://github.com/enesoeztekin/Google-Clone/blob/main/assets/github-img/dark-mode-toggler.PNG)
+![Dark Mode Toggle](https://github.com/enesoeztekin/Google-Clone/blob/main/assets/github-img/dark-mode-toggle.PNG)
 
 ## Preview (Dark Mode: Onn)
 
