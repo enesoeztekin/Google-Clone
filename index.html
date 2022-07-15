@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">
+            <svg class="apps-icon" focusable="false" viewBox="0 0 24 24">
+              <path fill="#5f6368" ;
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+              </path>
+            </svg>
+          </a></li>
+        <li>
+          <a href="#">
+            <img src="assets/enes.jpg" alt="Profile Photo" class="avatar">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" id="query">
+      </div>
+      <div class="buttons">
+        <button class="btn">Google Search</button>
+        <button class="btn" onclick="location.href = 'https://www.google.com/doodles'">I'm Feeling Lucky</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="location">Turkey</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+        </li>
+        <li>
+          <a
+            href="https://ads.google.com/intl/en_tr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        </li>
+        <li>
+          <a
+            href="https://smallbusiness.withgoogle.com/intl/tr_tr/?subid=tr-tr-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=tr-tr-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
+        </li>
+        <li>
+          <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="https://policies.google.com/privacy?hl=en-TR&fg=1">Privacy</a>
+        </li>
+        <li>
+          <a href="https://policies.google.com/terms?hl=en-TR&fg=1">Terms</a>
+        </li>
+        <li>
+          <a href="">Settings</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+
+    // Arama yapıldığında gerçek google arama motoruna yönlendirecek olan JS kodu.
+    let searchButton = document.querySelector(".buttons .btn:nth-child(1)");
+    searchButton.addEventListener("click", () => {
+      let query = document.getElementById("query").value;
+      location.href = "https://www.google.com/search?q=" + query;
+    });
+  </script>
+
+
+</body>
+
+</html>
