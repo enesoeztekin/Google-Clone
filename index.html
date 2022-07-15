@@ -74,7 +74,18 @@
           <a href="https://policies.google.com/terms?hl=en-TR&fg=1">Terms</a>
         </li>
         <li>
-          <a href="">Settings</a>
+          <button class="btn-settings">Settings</button>
+          <div class="dropdown">
+            <ul>
+              <li>Search Settings</li>
+              <li>Advanced Search</li>
+              <li>Your data in Search</li>
+              <li>Search History</li>
+              <li>Search Help</li>
+              <li>Search Feedback</li>
+              <li class="btn-theme-toggler">Dark theme: <span id="status-theme">On</span></li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
@@ -88,6 +99,35 @@
       let query = document.getElementById("query").value;
       location.href = "https://www.google.com/search?q=" + query;
     });
+
+
+    let settingsButton = document.querySelector(".btn-settings");
+    let dropdown = document.querySelector(".dropdown");
+    settingsButton.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    })
+
+
+    let body = document.body;
+    let themeTogglerButton = document.querySelector(".btn-theme-toggler");
+    themeTogglerButton.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      themeController();
+    })
+
+
+
+    themeController();
+
+    function themeController() {
+      if (document.body.classList.contains("dark")) {
+        document.querySelector(".logo > img").setAttribute("src", "assets/logo-dark.png")
+        document.querySelector("#status-theme").textContent = "On";
+      } else {
+        document.querySelector(".logo > img").setAttribute("src", "assets/logo.png")
+        document.querySelector("#status-theme").textContent = "Off";
+      }
+    }
   </script>
 
 
